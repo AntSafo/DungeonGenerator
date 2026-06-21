@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "runId": "cursed-deepforge-workhall",
+  "input": {
+    "settingPrompt": "A flame-wreathed dwarven deep-forge abandoned to magma and ash, where fire-cultists now hammer cursed iron in the dark beneath a dead mountain.",
+    "keyLocations": [
+      { "name": "The Magma Cistern", "description": "a churning lake of molten rock that lights the lower halls", "distanceCm": 400 },
+      { "name": "The Anvil Throne", "description": "the forge-lord's seat of welded blades, long gone cold", "distanceCm": 1500 },
+      { "name": "The Collapsed Stair", "description": "the rubble-choked ascent toward the surface", "distanceCm": 2600 }
+    ]
+  },
+  "identity": {
+    "locationType": "active forge-hall where fire-cultists hammer cursed iron",
+    "characteristics": "A broad, soot-blackened chamber of dwarven masonry built close above the magma cistern, its great hearth still roaring; anvils, quench-troughs, and racks of half-forged cursed blades crowd the working floor while heat-shimmer warps the air.",
+    "tone": "infernal, oppressive, hot and industrious, reverent toward fire in a cruel cultic way"
+  },
+  "surfaces": {
+    "floor": { "material": "fitted basalt flagstones", "texture": "heavy dwarven slabs scorched black, scattered with grey ash, glittering iron filings, and slag-spatter, cracked here and there to show a faint orange glow seeping from beneath" },
+    "ceiling": { "material": "vaulted granite blocks", "texture": "soot-caked stone webbed with old smoke-stains, hung with iron chains and crusted slag stalactites, faintly lit from below by furnace-glow" },
+    "walls": {
+      "back": { "material": "fire-brick and basalt masonry", "texture": "a wall dominated by the deep recess of the great hearth, brickwork glazed and cracked by centuries of heat, mortar fused to glass at the edges of the firebox" },
+      "front": { "material": "carved dwarven masonry", "texture": "soot-darkened stone bearing the worn relief of a hammer-and-flame sigil, broken by the entry: a tall iron-banded gate of blackened metal standing open, its hinges weeping rust, the threshold worn smooth by dragged ore-carts" },
+      "left": { "material": "basalt masonry", "texture": "heat-scorched stone, ringed with iron tool-hooks and brackets, streaked with soot above where braziers once burned" },
+      "right": { "material": "basalt masonry", "texture": "matching scorched stone, the lower courses scrawled with the fire-cult's ember-red glyphs daubed in ochre and ash" }
+    }
+  },
+  "sizePreset": "large",
+  "objects": [
+    { "id": "obj_01", "name": "Great Hearth-Forge", "description": "A massive arched forge built into the back wall, its firebox choked with glowing coals and warped cursed slag, breathing a constant furnace-roar of heat and ember-light.", "groupableSetId": "grp_01" },
+    { "id": "obj_02", "name": "Hammer-and-Flame Banner", "description": "A scorched iron-and-leather banner bearing the fire-cult's hammer wreathed in painted flame, hung high above the forge mouth.", "groupableSetId": "grp_01" },
+    { "id": "obj_03", "name": "Master Anvil", "description": "A colossal blackened anvil set on a basalt block, its face mirror-bright from work and stained at one edge with a sickly cursed sheen.", "groupableSetId": "grp_02" },
+    { "id": "obj_04", "name": "Forge-Hammer", "description": "An oversized two-handed forge-hammer, its haft wrapped in sweat-blackened leather, resting head-down across the anvil's face.", "groupableSetId": "grp_02" },
+    { "id": "obj_05", "name": "Quench-Trough", "description": "A long iron-bound stone trough of stagnant black water filmed with oil and ash, steam still curling from its surface.", "groupableSetId": "grp_02" },
+    { "id": "obj_06", "name": "Bellows-Engine", "description": "A great accordion bellows of cracked hide and iron ribbing, geared to a hand-crank, that feeds the hearth's fire.", "groupableSetId": "grp_01" },
+    { "id": "obj_07", "name": "Cursed-Blade Rack", "description": "A standing iron rack hung with half-finished cursed blades and glaives, their edges still dull and weeping a faint dark vapor.", "groupableSetId": "grp_03" },
+    { "id": "obj_08", "name": "Coal-and-Ore Bins", "description": "A row of riveted iron bins heaped with black coal and raw, faintly veined ore, dust spilling over their lips.", "groupableSetId": "grp_03" },
+    { "id": "obj_09", "name": "Standing Brazier (left)", "description": "A tall iron brazier on three clawed feet, its bowl full of low red coals, casting flickering light across the working floor.", "groupableSetId": "grp_04" },
+    { "id": "obj_10", "name": "Standing Brazier (right)", "description": "A twin clawed-foot brazier of glowing coals, mirroring its partner so the central aisle is lit from both sides.", "groupableSetId": "grp_04" },
+    { "id": "obj_11", "name": "Slag-Ash Hide", "description": "A heavy, half-burnt hide laid as a work-mat, crusted with cinders and iron-scale where the smith stands at the anvil.", "role": "floorCovering" },
+    { "id": "obj_12", "name": "Cooling-Chain Hoist", "description": "A heavy iron hoist-chain on a ceiling pulley, hung with cooling tongs and a hooked lifting clamp, swaying faintly in the rising heat." }
+  ],
+  "groupableSets": [
+    { "id": "grp_01", "memberIds": ["obj_01", "obj_02", "obj_06"] },
+    { "id": "grp_02", "memberIds": ["obj_03", "obj_04", "obj_05"] },
+    { "id": "grp_03", "memberIds": ["obj_07", "obj_08"] },
+    { "id": "grp_04", "memberIds": ["obj_09", "obj_10"] }
+  ],
+  "arrangementProse": "Stepping through the open iron gate in the front wall, the viewer looks straight down a clear working aisle to the roaring Great Hearth-Forge (obj_01) built into the center of the back wall. Mounted high on the back wall above the forge mouth hangs the scorched Hammer-and-Flame Banner (obj_02), and tucked against the back wall to the right of the hearth stands the great Bellows-Engine (obj_06) that feeds its fire. Set just forward of the hearth, off-center toward the left so the sightline to the firebox stays open, stands the Master Anvil (obj_03) on its basalt block, with the heavy Forge-Hammer (obj_04) resting across its face; the half-burnt Slag-Ash Hide (obj_11) lies on the floor centered beneath the anvil where the smith works. Hard against the left wall beyond the anvil runs the long Quench-Trough (obj_05). Along the right wall stand the Cursed-Blade Rack (obj_07) and, beside it, the row of Coal-and-Ore Bins (obj_08). Flanking the mouth of the aisle nearer the entry are two clawed-foot braziers, the left Standing Brazier (obj_09) against the left wall and the right Standing Brazier (obj_10) against the right wall, lighting the way in. Overhead, between the entry and the anvil, the Cooling-Chain Hoist (obj_12) hangs from the ceiling on its pulley. The floor just inside the gate and the central line of sight to the hearth are kept clear; anvil, trough, rack, bins, and braziers are all set against or close to the side and back walls.",
+  "placementNotes": [
+    { "objectId": "obj_01", "note": "Built into the center of the back wall; the glowing focal point at the end of the entry aisle.", "relationships": [ { "type": "nearWall", "targetId": null } ] },
+    { "objectId": "obj_02", "note": "Mounted high on the back wall above the forge mouth.", "relationships": [ { "type": "onWall", "targetId": null }, { "type": "adjacency", "targetId": "obj_01" } ] },
+    { "objectId": "obj_03", "note": "Stands just forward of the hearth, set off-center toward the left so the firebox stays visible.", "relationships": [] },
+    { "objectId": "obj_04", "note": "Rests across the face of the master anvil.", "relationships": [ { "type": "support", "targetId": "obj_03" } ] },
+    { "objectId": "obj_05", "note": "Runs along the left wall beyond the anvil.", "relationships": [ { "type": "nearWall", "targetId": null }, { "type": "adjacency", "targetId": "obj_03" } ] },
+    { "objectId": "obj_06", "note": "Against the back wall to the right of the hearth, feeding its fire.", "relationships": [ { "type": "nearWall", "targetId": null }, { "type": "adjacency", "targetId": "obj_01" } ] },
+    { "objectId": "obj_07", "note": "Stands against the right wall.", "relationships": [ { "type": "nearWall", "targetId": null } ] },
+    { "objectId": "obj_08", "note": "Lined up against the right wall beside the cursed-blade rack.", "relationships": [ { "type": "nearWall", "targetId": null }, { "type": "adjacency", "targetId": "obj_07" } ] },
+    { "objectId": "obj_09", "note": "Against the left wall near the entry, flanking the aisle mouth.", "relationships": [ { "type": "nearWall", "targetId": null } ] },
+    { "objectId": "obj_10", "note": "Against the right wall near the entry, mirroring the left brazier.", "relationships": [ { "type": "nearWall", "targetId": null } ] },
+    { "objectId": "obj_11", "note": "Lies on the floor centered beneath the master anvil.", "relationships": [ { "type": "under", "targetId": "obj_03" } ] },
+    { "objectId": "obj_12", "note": "Hangs from the ceiling on its pulley between the entry and the anvil.", "relationships": [ { "type": "onCeiling", "targetId": null } ] }
+  ]
+}

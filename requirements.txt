@@ -1,0 +1,14 @@
+anthropic
+openai
+python-dotenv
+pillow
+numpy
+pytest
+
+# Local image generation (diffusers + ControlNet) - optional, only for the local SD backend.
+# NOTE: install the CUDA build of torch separately FIRST (the plain wheel is CPU-only):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+diffusers
+transformers
+accelerate
+safetensors

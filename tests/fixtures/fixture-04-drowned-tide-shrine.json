@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "runId": "drowned-tide-altar-hall",
+  "input": {
+    "settingPrompt": "A flooded crypt beneath a drowned cathedral, claimed by a hooded cult of tide-worshippers who tend its altars and drowned dead.",
+    "keyLocations": [
+      { "name": "The Drowned Nave", "description": "the cathedral's collapsed main hall, ankle-deep in black water", "distanceCm": 1800 },
+      { "name": "The Reliquary Vault", "description": "a sealed vault rumored to hold a tide-saint's bones", "distanceCm": 500 },
+      { "name": "The Surface Stair", "description": "the long spiral stair back up to the living world", "distanceCm": 3000 }
+    ]
+  },
+  "identity": {
+    "locationType": "ceremonial tide-shrine and antechamber to the saint's reliquary",
+    "characteristics": "A wide, low-vaulted hall of salt-eaten basalt where the hooded cult tends a central altar and lays out its drowned dead in flanking biers; everything weeps brine and the air tastes of cold seawater.",
+    "tone": "solemn, reverent, drowned and funereal, heavy with ritual and damp silence"
+  },
+  "surfaces": {
+    "floor": { "material": "salt-stained flagstones", "texture": "uneven slabs slick with brine, grouted with black silt and crusted at the edges with pale barnacles, a thin sheet of standing tidewater mirroring the candlelight" },
+    "ceiling": { "material": "vaulted brick and mortar", "texture": "low groined vaults furred with mineral drip-stone and trailing strands of dead kelp, weeping slow beads of seawater" },
+    "walls": {
+      "back": { "material": "dressed basalt blocks", "texture": "dark stone carved with concentric tide-rings, streaked white with salt rime and veined by trickling water" },
+      "front": { "material": "dressed basalt blocks", "texture": "salt-rimed stone broken by the entry: a heavy door of black water-logged timber bound in corroded iron, swollen in its frame and standing ajar, with a greasy tide-line staining the stone to waist height on either side" },
+      "left": { "material": "dressed basalt blocks with shallow burial niches", "texture": "stone honeycombed with shrouded niches, hung with rotted votive ribbons and crusted barnacle clusters" },
+      "right": { "material": "dressed basalt blocks with shallow burial niches", "texture": "matching niches and salt-bleached stone, scrawled with the cult's looping tide-script in chalk and dried weed" }
+    }
+  },
+  "sizePreset": "grand",
+  "objects": [
+    { "id": "obj_01", "name": "Tide-Altar", "description": "A great slab altar of black basalt streaked with salt, raised on shallow worn steps, its surface cupped with channels that carry runoff brine back to the floor.", "groupableSetId": "grp_01" },
+    { "id": "obj_02", "name": "Relief of the Drowned Saint", "description": "A carved stone relief of the cult's tide-saint, hollow-eyed and crowned in coral, water seeping endlessly from the carved mouth." },
+    { "id": "obj_03", "name": "Bronze Brine-Basin", "description": "A wide verdigris-green basin brimming with black brine, used to anoint offerings and the drowned dead.", "groupableSetId": "grp_01" },
+    { "id": "obj_04", "name": "Coral-and-Bone Candelabrum (left)", "description": "A tall candelabrum of fused coral and yellowed bone bearing guttering tallow candles, wax sheeting down it like dripped wax over reef.", "groupableSetId": "grp_01" },
+    { "id": "obj_05", "name": "Coral-and-Bone Candelabrum (right)", "description": "A twin candelabrum of fused coral and bone, mirroring its partner so the altar is framed in cold flame.", "groupableSetId": "grp_01" },
+    { "id": "obj_06", "name": "Left Drowned-Bier", "description": "A low stone bier bearing a shrouded corpse wrapped in kelp and weighted with stones, the linen darkened with seep.", "groupableSetId": "grp_02" },
+    { "id": "obj_07", "name": "Right Drowned-Bier", "description": "A matching stone bier with another shrouded form laid out for the tides, awaiting its turn at the altar." },
+    { "id": "obj_08", "name": "Tide-Censer", "description": "A censer of green glass and coral suspended on a corroded chain, smoking faintly with salt-incense and dripping a slow thread of condensation." },
+    { "id": "obj_09", "name": "Kelp Prayer-Mat", "description": "A woven mat of dried kelp-fiber, salt-stiffened and worn pale where countless knees have pressed before the altar.", "role": "floorCovering" },
+    { "id": "obj_10", "name": "Grave-Urns", "description": "A clustered set of barnacled clay urns holding the salt-ash and small tokens of the long-drowned dead.", "groupableSetId": "grp_02" },
+    { "id": "obj_11", "name": "Litany Lectern", "description": "A slender lectern grown of pale coral, holding open a swollen, water-buckled book of tide-litanies." }
+  ],
+  "groupableSets": [
+    { "id": "grp_01", "memberIds": ["obj_01", "obj_03", "obj_04", "obj_05"] },
+    { "id": "grp_02", "memberIds": ["obj_06", "obj_10"] }
+  ],
+  "arrangementProse": "The chamber opens through the swollen timber door set in the front wall, and the eye is drawn straight down a clear central aisle to the great Tide-Altar (obj_01), raised on shallow steps against the back wall, dead center. Set into the back wall directly above it is the carved Relief of the Drowned Saint (obj_02). On the altar's broad slab rests the bronze Brine-Basin (obj_03). Flanking the altar and standing against the back wall to either side are two candelabra of fused coral and bone (obj_04 to the left of the altar, obj_05 to the right), framing it in cold candlelight. A woven kelp Prayer-Mat (obj_09) lies centered on the floor at the foot of the altar where supplicants kneel. Along the left wall stands the left Drowned-Bier (obj_06) bearing a shrouded corpse, with a cluster of barnacled Grave-Urns (obj_10) gathered on the floor beside it against the same wall. Mirroring it along the right wall is the right Drowned-Bier (obj_07), beside which the coral Litany Lectern (obj_11) stands against the right wall. Overhead, the green-glass Tide-Censer (obj_08) hangs from the center of the vaulted ceiling above the aisle, dripping. The floor just inside the door and the line of sight to the altar are kept clear; all biers, urns, lectern, and candelabra are set back against the side and back walls.",
+  "placementNotes": [
+    { "objectId": "obj_01", "note": "Centered against the back wall, raised on shallow steps; the focal point at the end of the entry aisle.", "relationships": [ { "type": "nearWall", "targetId": null } ] },
+    { "objectId": "obj_02", "note": "Mounted on the back wall directly above the altar.", "relationships": [ { "type": "onWall", "targetId": null } ] },
+    { "objectId": "obj_03", "note": "Resting on the broad slab of the altar.", "relationships": [ { "type": "support", "targetId": "obj_01" } ] },
+    { "objectId": "obj_04", "note": "Standing against the back wall to the left of the altar.", "relationships": [ { "type": "nearWall", "targetId": null }, { "type": "adjacency", "targetId": "obj_01" } ] },
+    { "objectId": "obj_05", "note": "Standing against the back wall to the right of the altar.", "relationships": [ { "type": "nearWall", "targetId": null }, { "type": "adjacency", "targetId": "obj_01" } ] },
+    { "objectId": "obj_06", "note": "Against the left wall, midway down the chamber.", "relationships": [ { "type": "nearWall", "targetId": null } ] },
+    { "objectId": "obj_07", "note": "Against the right wall, mirroring the left bier.", "relationships": [ { "type": "nearWall", "targetId": null } ] },
+    { "objectId": "obj_08", "note": "Hung from the center of the ceiling above the entry aisle.", "relationships": [ { "type": "onCeiling", "targetId": null } ] },
+    { "objectId": "obj_09", "note": "Lies centered on the floor at the foot of the altar.", "relationships": [ { "type": "under", "targetId": "obj_01" } ] },
+    { "objectId": "obj_10", "note": "Clustered on the floor against the left wall beside the left bier.", "relationships": [ { "type": "nearWall", "targetId": null }, { "type": "adjacency", "targetId": "obj_06" } ] },
+    { "objectId": "obj_11", "note": "Standing against the right wall beside the right bier.", "relationships": [ { "type": "nearWall", "targetId": null }, { "type": "adjacency", "targetId": "obj_07" } ] }
+  ]
+}

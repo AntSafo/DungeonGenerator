@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "runId": "fixture-03-ransacked-storeroom",
+  "input": {
+    "settingPrompt": "A large storeroom beneath a ruined temple, once used to hoard offerings, now ransacked and half-forgotten.",
+    "keyLocations": [
+      { "name": "Collapsed Nave", "description": "The caved-in main hall of the temple above.", "distanceCm": 2000 },
+      { "name": "Sealed Vault", "description": "A locked treasure vault deeper in the rock.", "distanceCm": 400 }
+    ]
+  },
+  "identity": {
+    "locationType": "ransacked temple storeroom",
+    "characteristics": "A large, high-ceilinged stone chamber with toppled clutter, a heavy offering-altar, and an old iron chandelier overhead.",
+    "tone": "plundered, sacred-gone-sour, shadowed and still"
+  },
+  "surfaces": {
+    "floor": { "material": "cracked stone slab", "texture": "dust-grey flags strewn with old straw and grit" },
+    "ceiling": { "material": "stone", "texture": "a high, shadowed vault lost in gloom" },
+    "walls": {
+      "back": { "material": "carved sandstone", "texture": "a great defaced relief of a forgotten god looming above the altar" },
+      "front": { "material": "carved sandstone", "texture": "a low central arched doorway half-choked with rubble" },
+      "left": { "material": "carved sandstone", "texture": "tawny blocks with a rusted sconce bracket jutting out" },
+      "right": { "material": "carved sandstone", "texture": "cracked, water-stained blocks, bare of ornament" }
+    }
+  },
+  "sizePreset": "large",
+  "objects": [
+    { "id": "obj_01", "name": "stone offering altar", "description": "A massive rectangular stone altar, chipped and stained, far taller and wider than a chest." },
+    { "id": "obj_02", "name": "bronze idol", "description": "A small bronze idol of a forgotten god, no taller than a forearm." },
+    { "id": "obj_03", "name": "oak barrel", "description": "A stout oak barrel, lid askew." },
+    { "id": "obj_04", "name": "oak barrel (second)", "description": "A second stout oak barrel, leaning against the first." },
+    { "id": "obj_05", "name": "broken crate", "description": "A splintered wooden crate spilling old straw." },
+    { "id": "obj_06", "name": "iron wall sconce (left)", "description": "A rusted iron sconce holding a guttered torch." },
+    { "id": "obj_07", "name": "iron wall sconce (right)", "description": "A rusted iron sconce, twin to the other, on the far wall." },
+    { "id": "obj_08", "name": "iron chandelier", "description": "A heavy iron ring-chandelier hung on a chain from the ceiling." },
+    { "id": "obj_09", "name": "tattered ceremonial rug", "description": "A long tattered ceremonial rug, its holy figures faded.", "role": "floorCovering" }
+  ],
+  "groupableSets": [
+    { "id": "grp_01", "memberIds": ["obj_03", "obj_04", "obj_05"] }
+  ],
+  "arrangementProse": "The massive stone offering altar stands against the back wall, centered, dominating the room; the small bronze idol sits toppled on its top surface, near one corner. In the front-left corner a clutter pile has collected: the two oak barrels lean together with the broken crate shoved against them. The iron wall sconces face each other from the left and right walls, set high above head height. Overhead, the iron chandelier hangs from the center of the ceiling, dropping a little way down on its chain. Running from the room's center toward the altar lies the tattered ceremonial rug.",
+  "placementNotes": [
+    { "objectId": "obj_01", "note": "Against the back wall, centered.", "relationships": [ { "type": "nearWall", "targetId": null } ] },
+    { "objectId": "obj_02", "note": "Toppled on the altar's top surface, near a corner.", "relationships": [ { "type": "support", "targetId": "obj_01" } ] },
+    { "objectId": "obj_03", "note": "In the front-left corner clutter pile.", "relationships": [ { "type": "nearWall", "targetId": null } ] },
+    { "objectId": "obj_04", "note": "Leaning against the first barrel in the clutter pile.", "relationships": [ { "type": "adjacency", "targetId": "obj_03" } ] },
+    { "objectId": "obj_05", "note": "Shoved against the barrels in the clutter pile.", "relationships": [ { "type": "adjacency", "targetId": "obj_03" } ] },
+    { "objectId": "obj_06", "note": "On the left wall, high above head height.", "relationships": [ { "type": "onWall", "targetId": null } ] },
+    { "objectId": "obj_07", "note": "On the right wall, high above head height, facing the left sconce.", "relationships": [ { "type": "onWall", "targetId": null } ] },
+    { "objectId": "obj_08", "note": "Hung from the center of the ceiling, dropping down on its chain.", "relationships": [ { "type": "onCeiling", "targetId": null } ] },
+    { "objectId": "obj_09", "note": "From room center toward the altar.", "relationships": [] }
+  ]
+}

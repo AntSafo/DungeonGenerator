@@ -1,0 +1,14 @@
+[
+  { "object_id": "obj_11", "shape": "rect", "d": 120, "w": 120, "height": 2, "xy_mode": "centered_on", "target": "obj_03", "offset": [0, 0], "z_anchor": "floor", "role": "floorCovering" },
+  { "object_id": "obj_01", "shape": "rect", "d": 80, "w": 180, "height": 220, "xy_mode": "against_wall", "wall": "back", "along": 176, "z_anchor": "floor", "group_id": "grp_01" },
+  { "object_id": "obj_03", "shape": "rect", "d": 65, "w": 100, "height": 105, "xy_mode": "grid", "cell": [1, 1], "offset": [-33, -4], "z_anchor": "floor", "group_id": "grp_02" },
+  { "object_id": "obj_06", "shape": "rect", "d": 90, "w": 70, "height": 150, "xy_mode": "against_wall", "wall": "back", "along": 300, "z_anchor": "floor", "group_id": "grp_01" },
+  { "object_id": "obj_05", "shape": "rect", "d": 200, "w": 55, "height": 70, "xy_mode": "against_wall", "wall": "left", "along": 205, "z_anchor": "floor", "group_id": "grp_02" },
+  { "object_id": "obj_07", "shape": "rect", "d": 100, "w": 40, "height": 170, "xy_mode": "against_wall", "wall": "right", "along": 180, "z_anchor": "floor", "group_id": "grp_03" },
+  { "object_id": "obj_08", "shape": "rect", "d": 140, "w": 50, "height": 90, "xy_mode": "beside", "target": "obj_07", "side": "front", "gap": 25, "slide": 0, "z_anchor": "floor", "group_id": "grp_03" },
+  { "object_id": "obj_09", "shape": "circle", "r": 30, "height": 130, "xy_mode": "against_wall", "wall": "left", "along": 432, "z_anchor": "floor", "group_id": "grp_04" },
+  { "object_id": "obj_10", "shape": "circle", "r": 30, "height": 130, "xy_mode": "against_wall", "wall": "right", "along": 428, "z_anchor": "floor", "group_id": "grp_04" },
+  { "object_id": "obj_04", "shape": "rect", "d": 25, "w": 75, "height": 20, "xy_mode": "centered_on", "target": "obj_03", "offset": [0, 8], "z_anchor": "on", "support": "obj_03", "group_id": "grp_02" },
+  { "object_id": "obj_02", "shape": "rect", "d": 10, "w": 130, "height": 90, "xy_mode": "against_wall", "wall": "back", "along": 176, "z_anchor": "wall", "mount_center": 240, "group_id": "grp_01" },
+  { "object_id": "obj_12", "shape": "rect", "d": 40, "w": 40, "height": 120, "xy_mode": "grid", "cell": [2, 2], "offset": [-20, -40], "z_anchor": "ceiling" }
+]

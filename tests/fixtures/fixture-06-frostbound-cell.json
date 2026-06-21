@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "runId": "frostbound-wardens-cell",
+  "input": {
+    "settingPrompt": "A cramped frostbound warden's cell in the upper gaol of a haunted border-keep, rimed with ice and old cruelty.",
+    "keyLocations": [
+      { "name": "The Iron Cages", "description": "a row of frozen holding cages down the corridor", "distanceCm": 700 },
+      { "name": "The Murder Hole", "description": "a slot above the gate where boiling oil was once poured", "distanceCm": 1100 },
+      { "name": "The Warden's Stair", "description": "the spiral up to the gatehouse watch", "distanceCm": 1800 }
+    ]
+  },
+  "identity": {
+    "locationType": "a warden's personal cell in the upper gaol of a border-keep",
+    "characteristics": "A cramped, narrow stone cell barely wider than its cot, every surface furred with frost and old grime; a warden once lived and worked here keeping the gaol, and the cold has preserved his cruelty along with his clutter.",
+    "tone": "bleak, frigid, claustrophobic and haunted, heavy with old cruelty and lonely watchfulness"
+  },
+  "surfaces": {
+    "floor": { "material": "rough stone slabs", "texture": "narrow worn flagstones glazed with a thin skin of ice, grouted black with grime, scuffed pale down the center where boots have paced" },
+    "ceiling": { "material": "low timber-and-plaster", "texture": "a low, oppressive ceiling of cracked plaster between dark roof-beams, fringed at the corners with hoarfrost and a few hanging icicles" },
+    "walls": {
+      "back": { "material": "frosted ashlar stone", "texture": "fitted grey blocks sheathed in a bloom of white frost, a single narrow arrow-slit high up letting in a blade of cold grey light" },
+      "front": { "material": "ashlar stone", "texture": "rime-streaked grey stone broken by the entry: a heavy iron-strapped oak door standing ajar, its boards swollen and frost-cracked, a rusted observation-slot set at eye height" },
+      "left": { "material": "frosted ashlar stone", "texture": "grey blocks veined with creeping frost, gouged with tally-scratches counting prisoners or days, stained dark at the base" },
+      "right": { "material": "frosted ashlar stone", "texture": "matching frosted stone, hung with rusted iron fittings and the ghost-pale outline where something long since rotted away" }
+    }
+  },
+  "sizePreset": "small",
+  "objects": [
+    { "id": "obj_01", "name": "Warden's Cot", "description": "A narrow iron-framed cot pushed lengthwise against the wall, its straw tick gone grey and stiff with frost, a single threadbare blanket frozen into folds.", "groupableSetId": "grp_01" },
+    { "id": "obj_02", "name": "Frost-Crusted Footlocker", "description": "A low banded-iron chest at the cot's foot, its lid frozen shut, the metal furred with white rime and weeping rust at the hinges.", "groupableSetId": "grp_01" },
+    { "id": "obj_03", "name": "Keys-and-Manacle Board", "description": "A plank of iron hooks bolted to the wall, hung with a heavy ring of frosted gaol-keys and a dangling pair of rusted manacles." },
+    { "id": "obj_04", "name": "Iron Brazier", "description": "A small three-legged brazier holding nothing but a heap of cold grey ash and a skin of ice, long dead and giving no warmth." },
+    { "id": "obj_05", "name": "Warden's Stool", "description": "A squat one-legged watch-stool, its seat worn smooth and split by the cold, tipped against the wall where it was last left." },
+    { "id": "obj_06", "name": "Tallow Lantern", "description": "A dented horn-paned lantern hanging from a beam-hook, its tallow stub frozen mid-drip, the horn clouded with frost." },
+    { "id": "obj_07", "name": "Frozen Slop-Bucket", "description": "A battered wooden bucket in the corner, its contents frozen to a filthy solid block, a film of ice sealing the rim." },
+    { "id": "obj_08", "name": "Threadbare Floor-Rag", "description": "A small frost-stiffened rag of a rug beside the cot, matted and grey, where bare feet once met the cold stone.", "role": "floorCovering" }
+  ],
+  "groupableSets": [
+    { "id": "grp_01", "memberIds": ["obj_01", "obj_02"] }
+  ],
+  "arrangementProse": "The heavy oak door in the front wall stands ajar, and from the threshold the cramped cell runs away narrow and deep toward the back wall, where a single arrow-slit lets in a blade of grey light. The Warden's Cot (obj_01) is pushed lengthwise hard against the left wall, running front-to-back so it never crosses the line of sight, with the Frost-Crusted Footlocker (obj_02) set at its foot toward the back-left corner. The threadbare Floor-Rag (obj_08) lies on the floor beside the cot, half-tucked beneath its frame. Against the back wall beneath the arrow-slit sits the dead Iron Brazier (obj_04), squarely centered at the end of the room as the cell's bleak focal point. The Keys-and-Manacle Board (obj_03) is bolted to the right wall toward the back, with the squat Warden's Stool (obj_05) tipped against the right wall beneath it. The Frozen Slop-Bucket (obj_07) sits jammed into the front-right corner near the door, out of the way. Overhead, just inside the entry, the Tallow Lantern (obj_06) hangs from a beam-hook near the front of the ceiling. The strip of floor just inside the door and the central sightline back to the brazier and arrow-slit are kept clear; cot, locker, board, stool, and bucket all hug the side and back walls.",
+  "placementNotes": [
+    { "objectId": "obj_01", "note": "Pushed lengthwise against the left wall, running front-to-back.", "relationships": [ { "type": "nearWall", "targetId": null } ] },
+    { "objectId": "obj_02", "note": "At the foot of the cot, toward the back-left corner against the left wall.", "relationships": [ { "type": "nearWall", "targetId": null }, { "type": "adjacency", "targetId": "obj_01" } ] },
+    { "objectId": "obj_03", "note": "Bolted to the right wall toward the back.", "relationships": [ { "type": "onWall", "targetId": null } ] },
+    { "objectId": "obj_04", "note": "Against the back wall, centered beneath the arrow-slit as the focal point.", "relationships": [ { "type": "nearWall", "targetId": null } ] },
+    { "objectId": "obj_05", "note": "Tipped against the right wall beneath the keys-and-manacle board.", "relationships": [ { "type": "nearWall", "targetId": null }, { "type": "adjacency", "targetId": "obj_03" } ] },
+    { "objectId": "obj_06", "note": "Hangs from a beam-hook on the ceiling just inside the entry.", "relationships": [ { "type": "onCeiling", "targetId": null } ] },
+    { "objectId": "obj_07", "note": "Jammed into the front-right corner near the door.", "relationships": [ { "type": "nearWall", "targetId": null } ] },
+    { "objectId": "obj_08", "note": "Lies on the floor beside the cot, half-tucked beneath its frame.", "relationships": [ { "type": "under", "targetId": "obj_01" } ] }
+  ]
+}

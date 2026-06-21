@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "runId": "fixture-01-wardens-cell",
+  "input": {
+    "settingPrompt": "A damp lower level of an old keep repurposed as a prison; the warden sleeps near the cells he guards.",
+    "keyLocations": [
+      { "name": "Cell Block", "description": "A row of iron-barred holding cells.", "distanceCm": 600 },
+      { "name": "Guard Stair", "description": "The spiral stair up to the gatehouse.", "distanceCm": 1500 }
+    ]
+  },
+  "identity": {
+    "locationType": "warden's sleeping cell",
+    "characteristics": "A cramped stone room with a single barred window, a low ceiling, and a faint smell of tallow and damp.",
+    "tone": "spartan, watchful, lived-in but joyless"
+  },
+  "surfaces": {
+    "floor": { "material": "stone flagstone", "texture": "cold, uneven slabs with damp gathering in the cracks" },
+    "ceiling": { "material": "stone", "texture": "a low, soot-darkened barrel vault" },
+    "walls": {
+      "back": { "material": "rough stone block", "texture": "a single iron-barred window set high in the centre, mortar crumbling" },
+      "front": { "material": "rough stone block", "texture": "a heavy iron-banded door set in the centre" },
+      "left": { "material": "rough stone block", "texture": "bare and mortar-grey, streaked with damp" },
+      "right": { "material": "rough stone block", "texture": "blotched with pale saltpetre and mildew" }
+    }
+  },
+  "sizePreset": "small",
+  "objects": [
+    { "id": "obj_01", "name": "iron-framed cot", "description": "A narrow, hard cot with a thin straw mattress, sized for one tired man." },
+    { "id": "obj_02", "name": "rough nightstand", "description": "A small squat nightstand of dark, water-stained wood." },
+    { "id": "obj_03", "name": "oil lamp", "description": "A small brass oil lamp with a smoke-blackened glass, kept close at hand." },
+    { "id": "obj_04", "name": "threadbare rug", "description": "A worn rectangular rug, its pattern long since trodden away.", "role": "floorCovering" },
+    { "id": "obj_05", "name": "faded portrait", "description": "A small framed portrait of a stern ancestor, hung for company more than beauty." },
+    { "id": "obj_06", "name": "footlocker chest", "description": "A banded wooden chest holding the warden's spare effects." }
+  ],
+  "groupableSets": [],
+  "arrangementProse": "The iron-framed cot is pushed lengthwise against the back wall, leaving as much floor as the small cell allows. The rough nightstand stands tight against the head of the cot on its right, near enough to reach without rising, and the oil lamp sits squarely on top of the nightstand. Above the nightstand the faded portrait hangs on the back wall, a little above head height when seated. At the foot of the cot crouches the banded footlocker chest, snug against the bed's end. The threadbare rug lies in the open center of the floor, its near edge slipping under the foot of the cot.",
+  "placementNotes": [
+    { "objectId": "obj_01", "note": "Lengthwise against the back wall.", "relationships": [ { "type": "nearWall", "targetId": null } ] },
+    { "objectId": "obj_02", "note": "Tight against the head (right end) of the cot.", "relationships": [ { "type": "adjacency", "targetId": "obj_01" } ] },
+    { "objectId": "obj_03", "note": "Resting on top of the nightstand.", "relationships": [ { "type": "support", "targetId": "obj_02" } ] },
+    { "objectId": "obj_04", "note": "Centered on the open floor; near edge tucks under the foot of the cot.", "relationships": [] },
+    { "objectId": "obj_05", "note": "Hung on the back wall above the nightstand.", "relationships": [ { "type": "onWall", "targetId": null } ] },
+    { "objectId": "obj_06", "note": "At the foot of the cot, snug against its end.", "relationships": [ { "type": "adjacency", "targetId": "obj_01" } ] }
+  ]
+}

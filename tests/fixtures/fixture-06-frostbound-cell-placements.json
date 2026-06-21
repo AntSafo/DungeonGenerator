@@ -1,0 +1,10 @@
+[
+  { "object_id": "obj_01", "shape": "rect", "d": 190, "w": 75, "height": 45, "xy_mode": "against_wall", "wall": "left", "along": 200, "z_anchor": "floor", "group_id": "grp_01" },
+  { "object_id": "obj_08", "shape": "rect", "d": 70, "w": 55, "height": 2, "xy_mode": "centered_on", "target": "obj_01", "offset": [-10, 32], "z_anchor": "floor", "role": "floorCovering" },
+  { "object_id": "obj_02", "shape": "rect", "d": 75, "w": 45, "height": 40, "xy_mode": "beside", "target": "obj_01", "side": "back", "gap": 8, "slide": 0, "z_anchor": "floor", "group_id": "grp_01" },
+  { "object_id": "obj_04", "shape": "circle", "r": 30, "height": 70, "xy_mode": "against_wall", "wall": "back", "along": 100, "z_anchor": "floor" },
+  { "object_id": "obj_03", "shape": "rect", "d": 45, "w": 10, "height": 55, "xy_mode": "against_wall", "wall": "right", "along": 80, "z_anchor": "wall", "mount_center": 145 },
+  { "object_id": "obj_05", "shape": "circle", "r": 22, "height": 45, "xy_mode": "beside", "target": "obj_03", "side": "front", "gap": 8, "slide": 0, "z_anchor": "floor" },
+  { "object_id": "obj_07", "shape": "circle", "r": 20, "height": 40, "xy_mode": "against_wall", "wall": "right", "along": 375, "z_anchor": "floor" },
+  { "object_id": "obj_06", "shape": "rect", "d": 22, "w": 22, "height": 30, "xy_mode": "grid", "cell": [3, 1], "offset": [20, 12], "z_anchor": "ceiling" }
+]

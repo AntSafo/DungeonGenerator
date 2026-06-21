@@ -1,0 +1,13 @@
+[
+  { "object_id": "obj_01", "shape": "rect", "d": 130, "w": 220, "height": 120, "xy_mode": "against_wall", "wall": "back", "along": 324, "z_anchor": "floor", "group_id": "grp_01" },
+  { "object_id": "obj_09", "shape": "rect", "d": 85, "w": 130, "height": 2, "xy_mode": "centered_on", "target": "obj_01", "offset": [120, 0], "z_anchor": "floor", "role": "floorCovering" },
+  { "object_id": "obj_04", "shape": "rect", "d": 34, "w": 34, "height": 185, "xy_mode": "beside", "target": "obj_01", "side": "left", "gap": 30, "slide": -48, "z_anchor": "floor", "group_id": "grp_01" },
+  { "object_id": "obj_05", "shape": "rect", "d": 34, "w": 34, "height": 185, "xy_mode": "beside", "target": "obj_01", "side": "right", "gap": 30, "slide": -48, "z_anchor": "floor", "group_id": "grp_01" },
+  { "object_id": "obj_06", "shape": "rect", "d": 200, "w": 72, "height": 55, "xy_mode": "against_wall", "wall": "left", "along": 200, "z_anchor": "floor", "group_id": "grp_02" },
+  { "object_id": "obj_07", "shape": "rect", "d": 200, "w": 72, "height": 55, "xy_mode": "against_wall", "wall": "right", "along": 205, "z_anchor": "floor" },
+  { "object_id": "obj_10", "shape": "rect", "d": 70, "w": 60, "height": 45, "xy_mode": "beside", "target": "obj_06", "side": "front", "gap": 30, "slide": -6, "z_anchor": "floor", "group_id": "grp_02" },
+  { "object_id": "obj_11", "shape": "rect", "d": 40, "w": 40, "height": 120, "xy_mode": "beside", "target": "obj_07", "side": "front", "gap": 40, "slide": 16, "z_anchor": "floor" },
+  { "object_id": "obj_03", "shape": "circle", "r": 32, "height": 28, "xy_mode": "centered_on", "target": "obj_01", "offset": [0, 0], "z_anchor": "on", "support": "obj_01", "group_id": "grp_01" },
+  { "object_id": "obj_02", "shape": "rect", "d": 12, "w": 130, "height": 160, "xy_mode": "against_wall", "wall": "back", "along": 324, "z_anchor": "wall", "mount_center": 235 },
+  { "object_id": "obj_08", "shape": "circle", "r": 20, "height": 40, "xy_mode": "grid", "cell": [1, 2], "offset": [92, 0], "z_anchor": "ceiling" }
+]

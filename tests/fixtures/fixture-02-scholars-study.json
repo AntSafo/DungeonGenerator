@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "runId": "fixture-02-scholars-study",
+  "input": {
+    "settingPrompt": "A scholar's study tucked into a quiet wing of an old library-fortress, used for reading and small meals alike.",
+    "keyLocations": [
+      { "name": "Great Stacks", "description": "Towering shelves of the main library.", "distanceCm": 1200 },
+      { "name": "Scriptorium", "description": "Where the monks copy manuscripts.", "distanceCm": 800 }
+    ]
+  },
+  "identity": {
+    "locationType": "scholar's study and dining nook",
+    "characteristics": "A warm, wood-panelled room of medium size with a tall window, smelling of ink, wax, and old paper.",
+    "tone": "scholarly, cozy, quietly cluttered"
+  },
+  "surfaces": {
+    "floor": { "material": "dark hardwood plank", "texture": "wide oiled boards, creaking and worn pale along the walking lines" },
+    "ceiling": { "material": "plaster with wooden beams", "texture": "cream plaster crossed by dark exposed beams" },
+    "walls": {
+      "back": { "material": "carved wood panelling", "texture": "warm honey panels framing a tall arched window" },
+      "front": { "material": "carved wood panelling", "texture": "a central panelled door flanked by slim pilasters" },
+      "left": { "material": "carved wood panelling", "texture": "shelved recesses sunk between the panels" },
+      "right": { "material": "carved wood panelling", "texture": "plain warm panels above a dado rail" }
+    }
+  },
+  "sizePreset": "medium",
+  "objects": [
+    { "id": "obj_01", "name": "round oak table", "description": "A sturdy circular oak table, its top ringed with old cup-stains." },
+    { "id": "obj_02", "name": "reading chair (north)", "description": "A high-backed wooden chair with a worn cushion." },
+    { "id": "obj_03", "name": "reading chair (east)", "description": "A high-backed wooden chair, twin to the others." },
+    { "id": "obj_04", "name": "reading chair (south)", "description": "A high-backed wooden chair, twin to the others." },
+    { "id": "obj_05", "name": "reading chair (west)", "description": "A high-backed wooden chair, twin to the others." },
+    { "id": "obj_06", "name": "pewter goblet", "description": "A dented pewter goblet, half-full of cold wine." },
+    { "id": "obj_07", "name": "stack of books", "description": "A leaning stack of three heavy leather-bound books." },
+    { "id": "obj_08", "name": "tall bookshelf", "description": "A tall bookshelf crammed with scrolls and codices, taller than a man." },
+    { "id": "obj_09", "name": "round mirror", "description": "A small round mirror in a tarnished silver frame." },
+    { "id": "obj_10", "name": "large woven rug", "description": "A large round-cornered woven rug in faded reds and golds.", "role": "floorCovering" }
+  ],
+  "groupableSets": [
+    { "id": "grp_01", "memberIds": ["obj_01", "obj_02", "obj_03", "obj_04", "obj_05"] }
+  ],
+  "arrangementProse": "The round oak table stands at the heart of the room, with its four high-backed reading chairs tucked evenly around it at north, east, south, and west, each pushed close enough that its seat slides under the table's edge. On the tabletop sit the pewter goblet and, beside it, the leaning stack of books. The tall bookshelf rises against the left wall, flat to it. On the back wall hangs the round mirror, set lower than a portrait would be, at about face height for someone standing. Beneath the whole table-and-chairs grouping lies the large woven rug, centered so the chairs all rest upon it.",
+  "placementNotes": [
+    { "objectId": "obj_01", "note": "Center of the room.", "relationships": [] },
+    { "objectId": "obj_02", "note": "Tucked against the north edge of the table, seat under the rim.", "relationships": [ { "type": "adjacency", "targetId": "obj_01" } ] },
+    { "objectId": "obj_03", "note": "Tucked against the east edge of the table.", "relationships": [ { "type": "adjacency", "targetId": "obj_01" } ] },
+    { "objectId": "obj_04", "note": "Tucked against the south edge of the table.", "relationships": [ { "type": "adjacency", "targetId": "obj_01" } ] },
+    { "objectId": "obj_05", "note": "Tucked against the west edge of the table.", "relationships": [ { "type": "adjacency", "targetId": "obj_01" } ] },
+    { "objectId": "obj_06", "note": "Resting on the tabletop.", "relationships": [ { "type": "support", "targetId": "obj_01" } ] },
+    { "objectId": "obj_07", "note": "Resting on the tabletop beside the goblet.", "relationships": [ { "type": "support", "targetId": "obj_01" } ] },
+    { "objectId": "obj_08", "note": "Standing on the floor, flat against the left wall.", "relationships": [ { "type": "nearWall", "targetId": null } ] },
+    { "objectId": "obj_09", "note": "Hung on the back wall at about standing face height.", "relationships": [ { "type": "onWall", "targetId": null } ] },
+    { "objectId": "obj_10", "note": "Centered beneath the round table (and the chairs around it).", "relationships": [ { "type": "under", "targetId": "obj_01" } ] }
+  ]
+}
