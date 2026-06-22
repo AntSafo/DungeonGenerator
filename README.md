@@ -20,12 +20,12 @@ next stage reads, so any stage can be re-run in isolation.
 
 | Step | Stage | What it does |
 |------|-------|--------------|
-| 2 | **Creative pass** (LLM) | `location` + optional `room type` / `tone` / `required items` -> a full room spec (identity, surfaces, objects). Always adds objects beyond the required ones. |
-| 3 | **Spatial layout** (LLM + engine) | Places every object into a 3D grid; a deterministic engine resolves collisions and merges grouped objects. |
-| 4 | **Render** (deterministic) | A fixed pinhole camera renders a **wireframe** and a **depth map** of the room from its doorway. |
-| 5 | **Image prompt** (LLM) | Assembles one image prompt describing how every object looks and where it sits in the view. |
-| 6 | **Image generation** | Turns the wireframe + prompt into a finished image (see backends below). |
-| 7-8 | **ASCII** (deterministic) | Greyscales the image and converts it to ASCII using perceptual luminance, at multiple resolutions. |
+| 1 | **Creative pass** (LLM) | `location` + optional `room type` / `tone` / `required items` -> a full room spec (identity, surfaces, objects). Always adds objects beyond the required ones. |
+| 2 | **Spatial layout** (LLM + engine) | Places every object into a 3D grid; a deterministic engine resolves collisions and merges grouped objects. |
+| 3 | **Render** (deterministic) | A fixed pinhole camera renders a **wireframe** and a **depth map** of the room from its doorway. |
+| 4 | **Image prompt** (LLM) | Assembles one image prompt describing how every object looks and where it sits in the view. |
+| 5 | **Image generation** | Turns the wireframe + prompt into a finished image (see backends below). |
+| 6-7 | **ASCII** (deterministic) | Greyscales the image and converts it to ASCII using perceptual luminance, at multiple resolutions. |
 
 The **coordinate system** has its origin at the back-left floor corner (+x toward the viewer,
 +y right, +z up, integer cm), and rooms come in four size presets. See [docs/](docs/) for the
@@ -41,8 +41,7 @@ design notes (room schema, presets, layout rules).
 
 ## Prerequisites
 
-Most dependencies install with pip (below), but a few **cannot** - those are the usual "why
-won't it run" gotchas, flagged here:
+Most dependencies install with pip (below), but a few cannot:
 
 - **Python 3.11+** - a real install, not the Windows Store stub.
 - **An LLM backend** for the creative/layout/prompt steps, either:
